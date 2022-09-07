@@ -1,3 +1,6 @@
 from django.contrib import admin
+from filmes.models.genero import Genero
+from filmes.models.diretor import Diretor
 
-# Register your models here.
+admin.site.register(Genero)
+admin.site.register(Diretor)

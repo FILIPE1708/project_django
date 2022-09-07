@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from filmes.views import api_genero, api_diretor
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('genero/', api_genero),
+    path('diretor/', api_diretor)
 ]
